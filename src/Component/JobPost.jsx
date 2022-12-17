@@ -11,7 +11,7 @@ export const JobPost = ()=>{
             data[temp[i].name]  =  temp[i].value.toLowerCase()
         }
         console.log(data)
-        fetch('http://localhost:5000/jobpost' , {
+        fetch('https://mock12-backend-js08.onrender.com/jobpost' , {
             method:'POST',
             body:JSON.stringify(data),
             headers:{

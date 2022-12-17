@@ -11,7 +11,7 @@ export const JobList = ()=>{
     const [TotalPages , setTotalPage] = useState(1)
 
     useEffect(()=>{
-        getAPiCall(`http://localhost:5000/getposts`)
+        getAPiCall(`https://mock12-backend-js08.onrender.com/getposts`)
     } , [])
 
     async function getAPiCall(url){
@@ -26,24 +26,24 @@ export const JobList = ()=>{
 
     function handleFilter(value){
         if(value != ''){
-            getAPiCall(`http://localhost:5000/getposts?filter=${value}`)
+            getAPiCall(`https://mock12-backend-js08.onrender.com/getposts?filter=${value}`)
             console.log(value)
         }else{
-            getAPiCall(`http://localhost:5000/getposts`)
+            getAPiCall(`https://mock12-backend-js08.onrender.com/getposts`)
         }
     }
 
     function handleSort(value){
         if(value == 'dec'){
-            getAPiCall(`http://localhost:5000/getposts?sort=dec`)
+            getAPiCall(`https://mock12-backend-js08.onrender.com/getposts?sort=dec`)
         }else{
-            getAPiCall(`http://localhost:5000/getposts?sort=asec`)
+            getAPiCall(`https://mock12-backend-js08.onrender.com/getposts?sort=asec`)
         }
 
     }
 
     function handleSearch(value){
-        let searchData = getAPiCall(`http://localhost:5000/getposts?q=${value}`)
+        let searchData = getAPiCall(`https://mock12-backend-js08.onrender.com/getposts?q=${value}`)
     }
 
     if(loading){
