@@ -55,8 +55,9 @@ export const JobList = ()=>{
         <Flex gap='4'  p='5' pl='200px'>
             <Filter  handleFilter={handleFilter}/>
             <Select width='10%' onChange={(e)=>handleSort(e.target.value)}>
-                <option value='dec'>latest to oldest</option>
+
                 <option value='asec'>oldest to latest</option>
+                <option value='dec'>latest to oldest</option>
             </Select>
             <Spacer/>
             <Search  handleSearch={handleSearch}/>
