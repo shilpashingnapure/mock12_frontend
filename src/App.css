@@ -1,0 +1,29 @@
+.card{
+    padding:20px 40px;
+    justify-content: space-between;
+    border-radius: 4px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+
+
+form{
+
+    width: 40%;
+    border: 1px solid rgb(211, 210, 210);
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding:25px;
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+.search{
+    flex-basis: 50%;
+}
